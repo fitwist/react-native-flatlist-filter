@@ -61,7 +61,7 @@ class FlatList_ extends Component {
       <FlatList 
         ListHeaderComponent={ this.renderHeader() }
         data = { this.state.contacts }
-        keyExtractor= { item => item._id }
+        keyExtractor= { item => item._id.toString() }
         renderItem = { this.renderContactsItem }
       />
     );
